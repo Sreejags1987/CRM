@@ -15,7 +15,7 @@ import test.BaseTest;
 import utility.ExtendReportUtility;
 
 public class Listener extends BaseTest implements ITestListener {
-	
+
 	ExtentTest test;
 
 	ExtentReports extent=ExtendReportUtility.createExtentReports();
@@ -24,31 +24,31 @@ public class Listener extends BaseTest implements ITestListener {
 
 
 	public void onTestStart(ITestResult result) {
-	
-	ITestListener.super.onTestStart(result);
-	test =extent.createTest(result.getMethod().getMethodName());
-	extentTest.set(test);
+
+		ITestListener.super.onTestStart(result);
+		test =extent.createTest(result.getMethod().getMethodName());
+		extentTest.set(test);
 
 	}
 
 	public void onTestSuccess(ITestResult result) {
-	
-	ITestListener.super.onTestSuccess(result);
-	extentTest.get().log(Status.PASS, "Test Passed");
+
+		ITestListener.super.onTestSuccess(result);
+		extentTest.get().log(Status.PASS, "Test Passed");
 	}
 
 	public void onTestFailure(ITestResult result) {
-	
-	ITestListener.super.onTestFailure(result);
-	extentTest.get().log(Status.FAIL, "Test Failed");
-	extentTest.get().fail(result.getThrowable());//error 
-	
+
+		ITestListener.super.onTestFailure(result);
+		extentTest.get().log(Status.FAIL, "Test Failed");
+		extentTest.get().fail(result.getThrowable());//error 
+
 
 	}
 
 	public void onTestSkipped(ITestResult result) {
-	ITestListener.super.onTestSkipped(result);
-	extentTest.get().log(Status.SKIP, "Test Skipped");
+		ITestListener.super.onTestSkipped(result);
+		extentTest.get().log(Status.SKIP, "Test Skipped");
 
 	}
 
@@ -56,13 +56,13 @@ public class Listener extends BaseTest implements ITestListener {
 
 	public void onFinish(ITestContext context) {
 
-	ITestListener.super.onFinish(context);
-	extent.flush();
-	//is used to erase any previous data on report and create new report
+		ITestListener.super.onFinish(context);
+		extent.flush();
+		//is used to erase any previous data on report and create new report
 	}
 
 
-	}
+}
 
 
 

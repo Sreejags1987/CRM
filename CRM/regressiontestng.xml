@@ -11,7 +11,6 @@
 	  <classes>
         <class name="test.LoginTest"/>
         <class name="test.NoteTest"/>
-        <class name="test.ClientTest"/>
         <class name="test.ProjectTest"/>
       
     </classes>

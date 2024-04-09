@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-05T20:17:17 IST" name="Suite" finished-at="2024-04-05T20:21:30 IST" duration-ms="252636">
+  <suite started-at="2024-04-05T20:48:03 IST" name="Default suite" finished-at="2024-04-05T20:51:33 IST" duration-ms="210633">
     <groups>
       <group name="regression">
-        <method signature="NoteTest.verifyCreateNote()[pri:1, instance:test.NoteTest@5f9be66c]" name="verifyCreateNote" class="test.NoteTest"/>
-        <method signature="NoteTest.verifyDeleteNote()[pri:2, instance:test.NoteTest@5f9be66c]" name="verifyDeleteNote" class="test.NoteTest"/>
-        <method signature="NoteTest.verifyEditNote()[pri:2, instance:test.NoteTest@5f9be66c]" name="verifyEditNote" class="test.NoteTest"/>
-        <method signature="NoteTest.verifySearchNote()[pri:2, instance:test.NoteTest@5f9be66c]" name="verifySearchNote" class="test.NoteTest"/>
+        <method signature="ProjectTest.verifySearchProject()[pri:2, instance:test.ProjectTest@1e04fa0a]" name="verifySearchProject" class="test.ProjectTest"/>
       </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="NoteTest.verifyCreateNote()[pri:1, instance:test.NoteTest@5f9be66c]" name="verifyCreateNote" class="test.NoteTest"/>
-        <method signature="NoteTest.verifyDeleteNote()[pri:2, instance:test.NoteTest@5f9be66c]" name="verifyDeleteNote" class="test.NoteTest"/>
-        <method signature="NoteTest.verifyEditNote()[pri:2, instance:test.NoteTest@5f9be66c]" name="verifyEditNote" class="test.NoteTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-04-05T20:17:17 IST" name="Test" finished-at="2024-04-05T20:21:30 IST" duration-ms="252636">
-      <class name="test.LoginTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.LoginTest@30c93896]" started-at="2024-04-05T20:17:18 IST" name="beforeMethod" finished-at="2024-04-05T20:17:29 IST" duration-ms="10425" status="PASS">
+    <test started-at="2024-04-05T20:48:03 IST" name="Default test" finished-at="2024-04-05T20:51:33 IST" duration-ms="210633">
+      <class name="test.ProjectTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.ProjectTest@1e04fa0a]" started-at="2024-04-05T20:48:03 IST" name="beforeMethod" finished-at="2024-04-05T20:48:09 IST" duration-ms="6721" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,91 +21,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:test.LoginTest@30c93896]" started-at="2024-04-05T20:17:29 IST" name="verifyLogin" data-provider="userData" finished-at="2024-04-05T20:17:30 IST" duration-ms="1629" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[admin@admin.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345678]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:test.LoginTest@30c93896]" started-at="2024-04-05T20:17:30 IST" name="aftermethod" finished-at="2024-04-05T20:17:31 IST" duration-ms="428" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLogin status=SUCCESS method=LoginTest.verifyLogin(java.lang.String,java.lang.String)[pri:1, instance:test.LoginTest@30c93896] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-      </class> <!-- test.LoginTest -->
-      <class name="test.NoteTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:17:31 IST" name="beforeMethod" finished-at="2024-04-05T20:17:35 IST" duration-ms="3905" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyCreateNote()[pri:1, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:17:35 IST" name="verifyCreateNote" finished-at="2024-04-05T20:17:40 IST" duration-ms="5012" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCreateNote -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:17:40 IST" name="aftermethod" finished-at="2024-04-05T20:17:40 IST" duration-ms="406" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCreateNote status=SUCCESS method=NoteTest.verifyCreateNote()[pri:1, instance:test.NoteTest@5f9be66c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:17:40 IST" name="beforeMethod" finished-at="2024-04-05T20:17:42 IST" duration-ms="2261" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyDeleteNote()[pri:2, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:17:42 IST" name="verifyDeleteNote" finished-at="2024-04-05T20:20:48 IST" duration-ms="185438" status="FAIL">
+        <test-method signature="verifySearchProject()[pri:2, instance:test.ProjectTest@1e04fa0a]" started-at="2024-04-05T20:48:09 IST" name="verifySearchProject" finished-at="2024-04-05T20:51:12 IST" duration-ms="183077" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
               <![CDATA[java.util.concurrent.TimeoutException
 Build info: version: '4.16.0', revision: '15400459dd*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1ec49cd07966672225c8500d0467964a, findElement {using=xpath, value=//a[@class='delete' and @data-id='1']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\sreej\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65239}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65239/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1ec49cd07966672225c8500d0467964a]]>
+Command: [0acb6e4ffcd0833e345e6a2be3fa061b, findElement {using=xpath, value=//input[@type='search']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\sreej\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1953/devtool..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0acb6e4ffcd0833e345e6a2be3fa061b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: '4.16.0', revision: '15400459dd*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1ec49cd07966672225c8500d0467964a, findElement {using=xpath, value=//a[@class='delete' and @data-id='1']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\sreej\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65239}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65239/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1ec49cd07966672225c8500d0467964a
+Command: [0acb6e4ffcd0833e345e6a2be3fa061b, findElement {using=xpath, value=//input[@type='search']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\sreej\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1953/devtool..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0acb6e4ffcd0833e345e6a2be3fa061b
 at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:402)
 at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
@@ -128,16 +54,14 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy17.isDisplayed(Unknown Source)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
 at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
 at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
-at utility.WaitUtility.waitForElementClick(WaitUtility.java:38)
-at page.NotePage.doDeleteNote(NotePage.java:144)
-at test.NoteTest.verifyDeleteNote(NoteTest.java:59)
+at utility.WaitUtility.waitForVisibility(WaitUtility.java:26)
+at page.ProjectPage.doSearchProject(ProjectPage.java:99)
+at test.ProjectTest.verifySearchProject(ProjectTest.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,77 +94,25 @@ Caused by: java.util.concurrent.TimeoutException
 at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
 at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
 at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:385)
-... 51 more
+... 49 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyDeleteNote -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:20:48 IST" name="aftermethod" finished-at="2024-04-05T20:21:09 IST" duration-ms="21081" status="PASS">
+        </test-method> <!-- verifySearchProject -->
+        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:test.ProjectTest@1e04fa0a]" started-at="2024-04-05T20:51:12 IST" name="aftermethod" finished-at="2024-04-05T20:51:33 IST" duration-ms="20773" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDeleteNote status=FAILURE method=NoteTest.verifyDeleteNote()[pri:2, instance:test.NoteTest@5f9be66c] output={null}]]]>
+                <![CDATA[[TestResult name=verifySearchProject status=FAILURE method=ProjectTest.verifySearchProject()[pri:2, instance:test.ProjectTest@1e04fa0a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:21:09 IST" name="beforeMethod" finished-at="2024-04-05T20:21:12 IST" duration-ms="3563" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyEditNote()[pri:2, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:21:12 IST" name="verifyEditNote" finished-at="2024-04-05T20:21:20 IST" duration-ms="7178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyEditNote -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:21:20 IST" name="aftermethod" finished-at="2024-04-05T20:21:20 IST" duration-ms="517" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyEditNote status=SUCCESS method=NoteTest.verifyEditNote()[pri:2, instance:test.NoteTest@5f9be66c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:21:20 IST" name="beforeMethod" finished-at="2024-04-05T20:21:24 IST" duration-ms="3940" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySearchNote()[pri:2, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:21:24 IST" name="verifySearchNote" finished-at="2024-04-05T20:21:29 IST" duration-ms="5086" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchNote -->
-        <test-method is-config="true" signature="aftermethod(org.testng.ITestResult)[pri:0, instance:test.NoteTest@5f9be66c]" started-at="2024-04-05T20:21:29 IST" name="aftermethod" finished-at="2024-04-05T20:21:30 IST" duration-ms="919" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchNote status=SUCCESS method=NoteTest.verifySearchNote()[pri:2, instance:test.NoteTest@5f9be66c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-      </class> <!-- test.NoteTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- test.ProjectTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

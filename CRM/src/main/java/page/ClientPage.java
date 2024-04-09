@@ -20,80 +20,80 @@ public class ClientPage {
 	WebDriverWait wait;
 
 
-    @FindBy(xpath="//span[text()='Clients']")
-    WebElement clientsmenu;
-    
-    @FindBy(xpath="//a[@title='Add client']")
-    WebElement addclientbutton;
-    
-    @FindBy(xpath="//input[@name='company_name']")
-    WebElement companynamefield;
-    
-    @FindBy(xpath="//textarea[@name='address']")
-    WebElement addressfield;
-    
-    @FindBy(xpath="//input[@name='city']")
-    WebElement cityfield;
-    
-    @FindBy(xpath="//input[@name='state']")
-    WebElement statefield;
-    
-    @FindBy(xpath="//input[@name='zip']")
-    WebElement zipfield;
-    
-    @FindBy(xpath="//input[@name='country']")
-    WebElement countryfield;
-    
-    @FindBy(xpath="//input[@name='phone']")
-    WebElement phonefield;
-    
-    @FindBy(xpath="//input[@name='website']")
-    WebElement websitefield;
-    
-    @FindBy(xpath="//input[@name='vat_number']")
-    WebElement vatnumberfield;
-    
-    @FindBy(xpath="//span[@id='select2-chosen-7']")
-    WebElement currencyfield;
-    
-    @FindBy(xpath="//input[@name='currency_symbol']")
-    WebElement currencysymbolfield;
-    
-    @FindBy(xpath="//input[@name='disable_online_payment']")
-    WebElement disableonlinepaymentfield;
-    
-    @FindBy(xpath="//button[@type='submit']")
-    WebElement clientsavebutton;
-    
-    @FindBy(xpath="//span[@class='fa fa-close']")
-    WebElement clientclosebutton;
-    
-    @FindBy(xpath="//input[@type='search']")
-    WebElement searchcompany;
-    
-    @FindBy(xpath="//table[@id='client-table']/tbody[1]/tr[1]/td[2]/a[1]")
-    WebElement searchtext;
-    
-    public ClientPage(WebDriver driver) {
+	@FindBy(xpath="//span[text()='Clients']")
+	WebElement clientsmenu;
+
+	@FindBy(xpath="//a[@title='Add client']")
+	WebElement addclientbutton;
+
+	@FindBy(xpath="//input[@name='company_name']")
+	WebElement companynamefield;
+
+	@FindBy(xpath="//textarea[@name='address']")
+	WebElement addressfield;
+
+	@FindBy(xpath="//input[@name='city']")
+	WebElement cityfield;
+
+	@FindBy(xpath="//input[@name='state']")
+	WebElement statefield;
+
+	@FindBy(xpath="//input[@name='zip']")
+	WebElement zipfield;
+
+	@FindBy(xpath="//input[@name='country']")
+	WebElement countryfield;
+
+	@FindBy(xpath="//input[@name='phone']")
+	WebElement phonefield;
+
+	@FindBy(xpath="//input[@name='website']")
+	WebElement websitefield;
+
+	@FindBy(xpath="//input[@name='vat_number']")
+	WebElement vatnumberfield;
+
+	@FindBy(xpath="//span[@id='select2-chosen-7']")
+	WebElement currencyfield;
+
+	@FindBy(xpath="//input[@name='currency_symbol']")
+	WebElement currencysymbolfield;
+
+	@FindBy(xpath="//input[@name='disable_online_payment']")
+	WebElement disableonlinepaymentfield;
+
+	@FindBy(xpath="//button[@type='submit']")
+	WebElement clientsavebutton;
+
+	@FindBy(xpath="//span[@class='fa fa-close']")
+	WebElement clientclosebutton;
+
+	@FindBy(xpath="//input[@type='search']")
+	WebElement searchcompany;
+
+	@FindBy(xpath="//table[@id='client-table']/tbody[1]/tr[1]/td[2]/a[1]")
+	WebElement searchtext;
+
+	public ClientPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		eutility = new ElementsUtility(driver);
 		uwait = new WaitUtility(driver);
-		
+
 	}
-	
+
 	public void clickOnClientsLink() {
 		WebElement clientPage = driver.findElement(By.xpath("//a[contains(text(),'Clients')]"));
 		WebElement clickOnClients = clientPage;
 		uwait.waitForVisibility(clientPage);
 		clientPage.click();
-		
+
 	}
-	
+
 	public void clickOnAddClients() {
 		uwait.waitForVisibility(addclientbutton);
 		addclientbutton.click();
-		
+
 	}
 	public String enterClientDetails(String companyname, String address,String city, String state, String zipcode, String country, String phone, String website, String VAT, String currency, String currencysymbol) {
 		uwait.waitForVisibility(companynamefield);
@@ -128,7 +128,7 @@ public class ClientPage {
 		eutility.clearAndsendKeys(searchcompany, companyname);
 		String actual=searchtext.getText();
 		return actual;
-		
+
 	}
 	public String searchClient(String searchvalue){
 		eutility.clearAndsendKeys(searchcompany, searchvalue);
@@ -143,13 +143,13 @@ public class ClientPage {
 			WebElement tableRow=driver.findElement(By.xpath("//table[@id='client-table']//tbody//tr["+row+"]//td[2]"));
 			message=tableRow.getText();
 			System.out.println(message);
-			
+
 		}
 		return message;
 	}
-	
+
 }
 
-    
-    
-    
+
+
+
